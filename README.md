@@ -1,142 +1,72 @@
 # AuraSign
 
-Plataforma para redirecionamento de usuários a partir de telas digitais e tags inteligentes, com rastreamento de jornada, geração de relatórios e apoio a campanhas locais.
+**Conecte o ambiente físico à experiência digital da sua marca.**
 
-## Visão geral
+AuraSign é uma solução desenvolvida para transformar pontos de contato presenciais em oportunidades de engajamento, relacionamento e conversão. Com uma abordagem moderna e visualmente atrativa, o produto foi pensado para negócios que desejam oferecer experiências mais interativas e mensuráveis ao seu público.
 
-O **AuraSign** foi pensado como um MVP para conectar **telas digitais**, **tags NFC/QR** e **landing pages dinâmicas**, permitindo que um usuário aproxime o celular de uma tela ou etiqueta e seja direcionado para uma experiência digital personalizada.
+## Sobre a solução
 
-A solução foi desenhada para ambientes como lojas, pontos de venda, vitrines, balcões, totens e espaços de atendimento, com foco em:
+AuraSign cria uma ponte entre o espaço físico e a jornada digital do cliente. A proposta é simples: captar a atenção no momento certo e direcionar a pessoa para uma experiência personalizada, com potencial de gerar interação, interesse e ação.
 
-- captação de interesse no ponto físico;
-- redirecionamento simples e rápido;
-- coleta de métricas de interação;
-- ofertas, cupons e cadastros;
-- relatórios para o comerciante.
+## Proposta de valor
 
-## Objetivos do projeto
+- **Mais visibilidade para campanhas** no ambiente físico.
+- **Interação imediata** com o público no ponto de contato.
+- **Experiência digital fluida** e com foco em conversão.
+- **Acompanhamento de resultados** para apoiar decisões comerciais.
+- **Aplicação versátil** em diferentes contextos de negócio.
 
-- Criar uma experiência de interação por proximidade com celular.
-- Redirecionar o usuário para uma URL curta e dinâmica.
-- Rastrear acesso por tag e campanha.
-- Exibir ofertas, vídeos, cadastros ou cupons.
-- Gerar dados úteis para análise comercial.
+## Principais aplicações
 
-## Funcionalidades principais
+AuraSign pode apoiar diferentes estratégias, como:
 
-- **Tag inteligente**: NFC, QR Code ou similar, anexada próxima à tela.
-- **Redirecionamento dinâmico**: URL curta configurável por campanha.
-- **Landing page personalizada**: página com conteúdo, vídeo, formulário ou cupom.
-- **Tracking de campanha**: uso de parâmetros UTM e identificação por tag.
-- **Dashboard de relatórios**: visualização de acessos e conversões.
-- **Bloqueio de conteúdo**: proteção contra alteração indevida da URL ou configuração.
-- **Arquitetura flexível**: suporte para evolução futura com novos fluxos e integrações.
+- vitrines e displays promocionais;
+- lojas e pontos de venda;
+- ativações de marca;
+- recepção e atendimento;
+- campanhas sazonais;
+- ações de relacionamento com clientes.
 
 ## Como funciona
 
-1. O comerciante instala uma tag ao lado da tela ou ponto de exposição.
-2. O cliente aproxima o celular ou escaneia o código.
-3. O sistema redireciona para uma página de destino.
-4. A página pode exibir oferta, vídeo, formulário ou cupom.
-5. As interações são registradas para análise posterior.
+1. A solução é instalada em um ponto físico estratégico.
+2. O cliente visualiza uma chamada de ação clara e atrativa.
+3. A interação leva a uma experiência digital personalizada.
+4. O negócio acompanha métricas e resultados da ação.
+5. Os dados ajudam a aprimorar futuras campanhas.
 
-## Casos de uso
+## Diferenciais
 
-- Promoções em lojas físicas.
-- Campanhas em vitrines.
-- Materiais interativos em pontos de venda.
-- Cadastro de leads em eventos.
-- Cupons e recompensas instantâneas.
-- Rastreamento de interesse por localização ou filial.
+- design pensado para apresentação comercial;
+- foco em experiência e engajamento;
+- facilidade de aplicação em ambientes físicos;
+- visão orientada a métricas e performance;
+- possibilidade de evolução conforme a necessidade do cliente.
 
-## Arquitetura sugerida
+## Para quem é indicado
 
-- **Frontend**: página de redirecionamento e landing pages.
-- **Backend**: controle de campanhas, tags, usuários e métricas.
-- **Banco de dados**: armazenamento de acessos, cadastros e eventos.
-- **Dashboard**: painéis de visualização e exportação de dados.
-- **Integrações**: analytics, planilhas, CRM ou ferramentas de marketing.
+AuraSign é ideal para empresas que buscam:
 
-## Tecnologias possíveis
+- inovar na comunicação com o cliente;
+- valorizar o ponto de venda;
+- ampliar o impacto de campanhas presenciais;
+- aumentar o engajamento com a marca;
+- transformar interações físicas em oportunidades digitais.
 
-- HTML, CSS e JavaScript
-- React, Vue ou outro framework frontend
-- Node.js, Python ou PHP no backend
-- PostgreSQL, MySQL ou SQLite
-- APIs de analytics e relatórios
-- QR Code / NFC / URLs encurtadas
+## Status do projeto
 
-## Requisitos para rodar o projeto
+**Em desenvolvimento.**
 
-- Node.js ou ambiente equivalente
-- Banco de dados configurado
-- Variáveis de ambiente definidas
-- Acesso às credenciais de campanha e tracking
+Este repositório apresenta a visão do produto e sua evolução como solução comercial.
 
-## Instalação
+## Próximos passos
 
-```bash
-git clone https://github.com/seu-usuario/aurasign.git
-cd aurasign
-npm install
-npm run dev
-```
-
-## Configuração
-
-Crie um arquivo `.env` com as variáveis necessárias:
-
-```env
-APP_URL=https://seu-dominio.com
-DATABASE_URL=sua_string_de_conexao
-TRACKING_ENABLED=true
-```
-
-## Estrutura sugerida do projeto
-
-```bash
-aurasign/
-├── src/
-├── public/
-├── components/
-├── pages/
-├── api/
-├── assets/
-├── docs/
-└── README.md
-```
-
-## Roadmap
-
-- MVP com redirecionamento simples.
-- Suporte a múltiplas tags.
-- Dashboard de métricas.
-- Campanhas com UTM.
-- Regras por loja ou região.
-- Integração com CRM e automações.
-- Melhorias de segurança e autenticação.
-
-## Segurança
-
-O projeto deve considerar:
-
-- proteção das URLs dinâmicas;
-- validação de acesso por campanha;
-- registro de eventos sem expor dados sensíveis;
-- controle de alteração de conteúdo;
-- boas práticas de autenticação e permissões.
-
-## Contribuição
-
-1. Faça um fork do repositório.
-2. Crie uma branch para sua melhoria.
-3. Envie um pull request com descrição clara.
-4. Mantenha o foco no MVP e na simplicidade.
-
-## Licença
-
-Definir de acordo com a estratégia do projeto.
+- refinamento da proposta visual;
+- consolidação dos fluxos de experiência;
+- validação de cenários de uso;
+- preparação da primeira versão comercial;
+- expansão gradual dos recursos da plataforma.
 
 ## Contato
 
-Projeto em evolução com foco em tecnologia, dados e experiência no ponto físico.
+Se sua empresa busca uma solução moderna para criar experiências mais conectadas e eficazes, o AuraSign pode ser o próximo passo.
